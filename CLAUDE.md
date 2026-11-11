@@ -47,4 +47,6 @@ If any mandatory field is missing: ask explicitly before drafting — never gene
 - Never invent data (price, surface, CEE, permitted use, etc.)
 - CEE and price must always appear explicitly in the final text
 - Segment/tone adjusts register and emphasis only — it never removes a mandatory field or changes the base template structure
+- Never infer the operation type from the price — ask if it isn't stated
+- Don't compare the property with others in the area unless the user provides that comparative data
 - Avoid superlatives without supporting data; no caps for emphasis; no excessive exclamations

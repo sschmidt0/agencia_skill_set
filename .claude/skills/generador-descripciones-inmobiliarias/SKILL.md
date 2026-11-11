@@ -30,6 +30,8 @@ Actívalo cuando el usuario proporcione datos de una propiedad (aunque sea en br
 - Nunca inventar datos que no se han proporcionado (superficie, precio, certificado energético, uso permitido en locales, etc.)
 - El certificado energético y el precio (o renta/traspaso) son siempre obligatorios y siempre explícitos en el texto final — ver `reference/normativa-anuncios.md`
 - En locales comerciales, el uso permitido/licencia de actividad es tan obligatorio como el certificado energético — no asumir que cualquier uso está permitido
+- El tipo de operación (venta/alquiler/traspaso) nunca se deduce del importe: si el usuario no lo indica, preguntarlo antes de redactar, aunque el precio haga una opción probable
+- No comparar la propiedad con otras de la zona ("a diferencia de otros pisos de la zona", "más amplio que la media") salvo que el usuario aporte ese dato comparativo — el elemento diferenciador describe lo que tiene la propiedad, no lo que les falta a otras
 - Mantener el texto entre 80-150 palabras salvo que el usuario pida otra longitud
 - El segmento/tono ajusta el registro y el énfasis, nunca elimina un campo obligatorio ni cambia la estructura base de la plantilla
 

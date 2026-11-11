@@ -17,7 +17,8 @@ Estructura de referencia para generar descripciones de pisos. Sigue este orden y
    - Opcionales si hay dato: orientación, año de construcción, estado (reformado/a reformar/obra nueva), terraza/balcón, trastero, parking, calefacción/aire acondicionado, comunidad (cuota si se conoce)
 
 4. **Elemento diferenciador** (1 frase)
-   - Lo que distingue esta propiedad de otras similares en la zona: vistas, luz natural, reforma reciente, edificio con encanto, etc.
+   - El rasgo más destacable de la propiedad según los datos: vistas, luz natural, reforma reciente, edificio con encanto, etc.
+   - Describir lo que tiene la propiedad, sin compararla con otras de la zona salvo que el usuario aporte ese dato
    - Si no hay dato diferenciador claro, omitir esta sección — no inventar
 
 5. **Cierre con llamada a la acción**

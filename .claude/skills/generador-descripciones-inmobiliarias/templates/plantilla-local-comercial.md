@@ -25,6 +25,7 @@ Estructura de referencia para generar descripciones de locales comerciales (vent
 
 4. **Elemento diferenciador** (1 frase)
    - Esquina, doble fachada, escaparate amplio, licencia de actividad ya concedida para un uso específico (ahorra trámites al inquilino), traspaso con clientela activa
+   - Describir lo que tiene el local, sin compararlo con otros de la zona salvo que el usuario aporte ese dato
    - Si no hay dato diferenciador claro, omitir esta sección — no inventar
 
 5. **Cierre con llamada a la acción**

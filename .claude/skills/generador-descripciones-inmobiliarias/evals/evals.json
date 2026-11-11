@@ -86,7 +86,7 @@
     {
       "id": 7,
       "name": "lujo-sin-superlativos",
-      "prompt": "Anuncio de alto standing: ático dúplex en Pedralbes (Barcelona), 210m² construidos, terraza de 90m², 4 hab, 3 baños, planta 8ª con ascensor, 2 plazas de parking, 2.400.000€, certificado C. Cocina Santos, suelos de roble.",
+      "prompt": "Anuncio de alto standing: ático dúplex en Pedralbes (Barcelona), 210m² construidos, terraza de 90m², 4 hab, 3 baños, planta 8ª con ascensor, 2 plazas de parking, venta 2.400.000€, certificado C. Cocina Santos, suelos de roble.",
       "expected_output": "Anuncio con registro de lujo apoyado en datos concretos, sin superlativos sin respaldo.",
       "files": [],
       "expectations": [
@@ -94,6 +94,7 @@
         "Menciona los detalles concretos aportados (cocina Santos, suelos de roble, terraza de 90m²)",
         "No usa superlativos sin respaldo como 'la zona más exclusiva', 'privacidad absoluta' u 'oportunidad única'",
         "No inventa materiales, vistas ni servicios que no constan en la entrada",
+        "No compara la propiedad con otras de la zona",
         "El texto incluye 2.400.000€ y el certificado C"
       ]
     },
@@ -109,6 +110,7 @@
         "Usa 'built area' (o equivalente) para m² construidos y 'energy performance certificate' / 'EPC' para el certificado",
         "Usa el formato de cifras inglés para el precio (€320,000)",
         "Mantiene 'Sant Feliu de Llobregat' sin traducir",
+        "No compara la propiedad con otras de la zona (p.ej. 'sets it apart from standard apartments in the area')",
         "El texto incluye el certificado C"
       ]
     },
@@ -138,6 +140,18 @@
         "Menciona que está amueblado",
         "Indica 95m² útiles e incluye 1.200€/mes y el certificado E",
         "No incluye lenguaje discriminatorio sobre quién puede alquilar"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "falta-tipo-operacion",
+      "prompt": "Prepárame el anuncio: piso en Sabadell centro, 80m² construidos, 3 hab, 1 baño, 3ª planta con ascensor, 285.000€, certificado D.",
+      "expected_output": "No genera el anuncio; pregunta si es venta, alquiler o traspaso.",
+      "files": [],
+      "expectations": [
+        "No genera ningún borrador de anuncio",
+        "Pregunta explícitamente el tipo de operación (venta, alquiler o traspaso)",
+        "No da por hecho que es una venta por el importe, ni redacta el anuncio como venta 'a confirmar'"
       ]
     }
   ]

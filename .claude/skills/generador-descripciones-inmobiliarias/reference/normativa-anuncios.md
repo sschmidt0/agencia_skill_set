@@ -25,6 +25,7 @@ Este archivo se carga cuando el skill necesita verificar qué información es le
 
 4. **Identificación del tipo de operación**
    - El anuncio debe dejar claro si es venta, alquiler o traspaso. No debe quedar ambiguo.
+   - Si el usuario no lo indica, preguntarlo. No deducirlo del importe (p.ej. "2.400.000€ tiene que ser venta"), aunque parezca evidente.
 
 5. **Ubicación**
    - No es obligatorio dar la dirección exacta (de hecho, muchas agencias prefieren solo zona/barrio por seguridad y para evitar que el cliente contacte directamente al propietario), pero sí la localidad y zona aproximada.

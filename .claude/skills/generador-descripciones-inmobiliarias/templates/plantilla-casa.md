@@ -25,6 +25,7 @@ Estructura de referencia para generar descripciones de casas (unifamiliares, ado
 
 4. **Elemento diferenciador** (1 frase)
    - Vistas, tipo de parcela, piscina propia, reforma reciente, ubicación singular
+   - Describir lo que tiene la propiedad, sin compararla con otras de la zona salvo que el usuario aporte ese dato
    - Si no hay dato diferenciador claro, omitir esta sección — no inventar
 
 5. **Cierre con llamada a la acción**
