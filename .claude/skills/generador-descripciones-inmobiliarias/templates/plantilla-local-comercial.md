@@ -20,7 +20,7 @@ Estructura de referencia para generar descripciones de locales comerciales (vent
    - Específico si hay datos: "en calle peatonal con alta afluencia de paso", "junto a parada de metro con más de X mil viajeros/día" (solo si el dato está confirmado, no estimar)
 
 3. **Características del local** (lista o párrafo)
-   - Obligatorias: m² totales, diáfano o compartimentado, uso permitido/licencia de actividad, planta (calle, sótano, entresuelo)
+   - Obligatorias: superficie (m² construidos o útiles, siempre indicando cuál — ver normativa-anuncios.md), diáfano o compartimentado, uso permitido/licencia de actividad, planta (calle, sótano, entresuelo)
    - Opcionales si hay dato: metros lineales de escaparate, altura libre, acceso para carga/descarga, aseos, instalación eléctrica/climatización existente, salida de humos (relevante para hostelería), traspaso o local vacío
 
 4. **Elemento diferenciador** (1 frase)
@@ -35,12 +35,12 @@ Estructura de referencia para generar descripciones de locales comerciales (vent
 | Campo | Obligatorio | Notas |
 |---|---|---|
 | tipo_operación | Sí | venta, alquiler o traspaso |
-| m2_totales | Sí | — |
+| superficie | Sí | m² construidos o útiles (o ambos); si no se especifica, tratar como construidos y avisar al usuario |
 | diáfano_o_compartimentado | Sí | — |
 | uso_permitido | Sí | según licencia de actividad — no asumir que cualquier uso está permitido |
 | planta | Sí | calle, sótano, entresuelo, primera planta... |
 | ubicación | Sí | calle/zona + ciudad |
-| precio | Sí | venta, renta mensual, o precio de traspaso según tipo_operación |
+| precio | Sí | venta: precio total · alquiler: renta mensual · traspaso: importe del traspaso; renta mensual recomendada si se conoce (ver normativa-anuncios.md) |
 | certificado_energético | Sí | letra + consumo (ver normativa-anuncios.md) — obligatorio también en locales |
 | escaparate_ml | No | metros lineales de escaparate |
 | altura_libre | No | relevante para negocios que necesiten almacenaje o instalaciones |
@@ -56,11 +56,11 @@ Local en alquiler, 90m², diáfano, planta calle, esquina, uso permitido: comerc
 
 > **Local diáfano en esquina con salida de humos en la calle comercial principal de Sant Feliu**
 >
-> Situado en planta calle sobre una de las vías comerciales de más afluencia de Sant Feliu de Llobregat, este local combina visibilidad y tránsito constante de público, ideal tanto para comercio como para hostelería.
+> Situado en planta calle y en esquina sobre la calle comercial principal de Sant Feliu de Llobregat. Su licencia permite tanto uso comercial como de hostelería.
 >
-> Cuenta con 90m² diáfanos, ubicación en esquina con 12 metros lineales de escaparate y uso permitido comercial/hostelería. Dispone de salida de humos ya instalada, lo que agiliza la puesta en marcha de negocios de restauración.
+> Cuenta con 90m² construidos, diáfanos, y 12 metros lineales de escaparate. Uso permitido: comercial/hostelería. Dispone de salida de humos ya instalada, lo que evita esa obra a negocios de restauración y agiliza su puesta en marcha.
 >
-> Su posición en esquina y la doble visibilidad de escaparate lo convierten en un emplazamiento especialmente competitivo para captar clientela de paso.
+> La combinación de esquina, uso hostelero permitido y salida de humos instalada lo hace especialmente adecuado para restauración.
 >
 > Renta: 1.200€/mes · Certificado energético: E
 > Solicita más información sobre condiciones y disponibilidad.

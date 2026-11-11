@@ -1,0 +1,144 @@
+{
+  "skill_name": "generador-descripciones-inmobiliarias",
+  "evals": [
+    {
+      "id": 1,
+      "name": "piso-completo-estandar",
+      "prompt": "Hazme el anuncio de este piso: 3 hab, 1 baño, 92m² construidos, 2ª planta sin ascensor, barrio de Gràcia (Barcelona), venta 410.000€, certificado energético E (152 kWh/m² año), balcón a la calle.",
+      "expected_output": "Anuncio en español con estructura titular → ubicación → características → (diferenciador) → cierre, 80-150 palabras, con precio y CEE explícitos.",
+      "files": [],
+      "expectations": [
+        "Genera el anuncio sin preguntar nada, porque están todos los datos obligatorios",
+        "El texto incluye el precio 410.000€",
+        "El texto incluye el certificado energético E y el consumo 152 kWh/m² año",
+        "Indica que la superficie son 92m² construidos",
+        "Indica que es una 2ª planta sin ascensor (no lo oculta ni lo maquilla)",
+        "No inventa datos ausentes: distancias, transporte concreto, luminosidad, estado de reforma o servicios del barrio",
+        "El texto del anuncio tiene entre 80 y 150 palabras",
+        "No usa mayúsculas para enfatizar ni varias exclamaciones"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "falta-cee",
+      "prompt": "Necesito un anuncio para un piso en Sant Feliu de Llobregat: 70m², 2 habitaciones, 1 baño, 3ª con ascensor, 190.000€.",
+      "expected_output": "No genera el anuncio; pide el certificado energético.",
+      "files": [],
+      "expectations": [
+        "No genera ningún borrador de anuncio",
+        "Pide explícitamente el certificado de eficiencia energética (letra y, si lo hay, consumo)",
+        "No propone ni supone una letra de certificado"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "falta-precio",
+      "prompt": "Redacta el anuncio de venta: casa adosada en Sant Cugat del Vallès, 180m² construidos, parcela 150m², 4 hab, 2 baños, 3 plantas, certificado D. El precio lo decidimos luego.",
+      "expected_output": "No genera el anuncio; pide el precio.",
+      "files": [],
+      "expectations": [
+        "No genera ningún borrador de anuncio",
+        "Pide explícitamente el precio de venta",
+        "No propone un precio orientativo ni un rango estimado"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "local-sin-uso-permitido",
+      "prompt": "Anuncio de alquiler para un local: 120m² construidos, compartimentado, planta calle, zona centro de Sant Feliu de Llobregat, 1.500€/mes, certificado F. Antes había un bar.",
+      "expected_output": "No genera el anuncio; pide el uso permitido / licencia de actividad.",
+      "files": [],
+      "expectations": [
+        "No genera ningún borrador de anuncio",
+        "Pide explícitamente el uso permitido o la licencia de actividad",
+        "No deduce que se permite hostelería porque antes hubiera un bar"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "traspaso-sin-renta",
+      "prompt": "Traspaso de local en Sant Feliu de Llobregat, zona Mercat: 60m² útiles, diáfano, planta calle, uso permitido comercial, traspaso 25.000€, certificado E. Hazme el anuncio.",
+      "expected_output": "Genera el anuncio con el importe del traspaso; no bloquea por la renta mensual.",
+      "files": [],
+      "expectations": [
+        "Genera el anuncio sin pedir antes la renta mensual",
+        "Deja claro que la operación es un traspaso",
+        "El texto incluye el importe del traspaso 25.000€ y el certificado energético E",
+        "Indica el uso permitido comercial",
+        "Indica la superficie como 60m² útiles (no la convierte a construidos)",
+        "No inventa una renta mensual, clientela ni facturación"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "superficie-sin-especificar",
+      "prompt": "Piso en alquiler en Terrassa centro, 75m², 2 hab, 1 baño, 1ª planta con ascensor, 950€/mes, certificado D. Amueblado.",
+      "expected_output": "Genera el anuncio tratando los 75m² como construidos y avisa al usuario fuera del texto del anuncio.",
+      "files": [],
+      "expectations": [
+        "Genera el anuncio sin bloquearse por la superficie",
+        "El texto del anuncio indica 75m² construidos",
+        "Fuera del texto del anuncio, avisa al usuario de que ha tomado los 75m² como construidos y ofrece corregirlo",
+        "No calcula ni menciona una superficie útil estimada",
+        "El texto deja claro que es un alquiler e incluye 950€/mes y el certificado D"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "lujo-sin-superlativos",
+      "prompt": "Anuncio de alto standing: ático dúplex en Pedralbes (Barcelona), 210m² construidos, terraza de 90m², 4 hab, 3 baños, planta 8ª con ascensor, 2 plazas de parking, 2.400.000€, certificado C. Cocina Santos, suelos de roble.",
+      "expected_output": "Anuncio con registro de lujo apoyado en datos concretos, sin superlativos sin respaldo.",
+      "files": [],
+      "expectations": [
+        "Usa un registro elaborado propio del segmento lujo",
+        "Menciona los detalles concretos aportados (cocina Santos, suelos de roble, terraza de 90m²)",
+        "No usa superlativos sin respaldo como 'la zona más exclusiva', 'privacidad absoluta' u 'oportunidad única'",
+        "No inventa materiales, vistas ni servicios que no constan en la entrada",
+        "El texto incluye 2.400.000€ y el certificado C"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "atico-en-ingles",
+      "prompt": "Write this listing in English: ático en Sant Feliu de Llobregat, 80m² construidos, 2 hab, 1 baño, terraza de 25m², 6ª planta con ascensor, venta 320.000€, certificado energético C.",
+      "expected_output": "Anuncio en inglés con terminología correcta y formato de cifras inglés.",
+      "files": [],
+      "expectations": [
+        "El anuncio está escrito en inglés",
+        "Traduce 'ático' como 'penthouse' o 'top-floor apartment', nunca como 'attic'",
+        "Usa 'built area' (o equivalente) para m² construidos y 'energy performance certificate' / 'EPC' para el certificado",
+        "Usa el formato de cifras inglés para el precio (€320,000)",
+        "Mantiene 'Sant Feliu de Llobregat' sin traducir",
+        "El texto incluye el certificado C"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "casa-en-catalan",
+      "prompt": "Fes-me l'anunci en català: casa aparellada a Sant Cugat del Vallès, 200m² construïts, parcel·la 300m², 4 habitacions, 3 banys, 2 plantes, jardí, garatge per a 1 cotxe, venda 780.000€, certificat energètic D.",
+      "expected_output": "Anuncio en catalán con terminología correcta.",
+      "files": [],
+      "expectations": [
+        "El anuncio está escrito en catalán",
+        "Usa 'casa aparellada', 'parcel·la' y 'metres construïts' (o '200m² construïts')",
+        "El texto incluye 780.000€ y el certificat energètic D",
+        "Da peso a los elementos exteriores (parcela, jardín) según la plantilla de casa",
+        "No inventa el número de medianeras ni otros datos ausentes"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "estudiantes",
+      "prompt": "Piso para estudiantes cerca de la UAB en Cerdanyola del Vallès: alquiler 1.200€/mes, 4 hab, 2 baños, 95m² útiles, amueblado, 2ª planta con ascensor, certificado E.",
+      "expected_output": "Anuncio con tono del segmento alquiler estudiantes.",
+      "files": [],
+      "expectations": [
+        "Aplica el tono de alquiler estudiantes: cercano y directo",
+        "Menciona la cercanía a la UAB sin inventar una distancia o tiempo concreto",
+        "Menciona que está amueblado",
+        "Indica 95m² útiles e incluye 1.200€/mes y el certificado E",
+        "No incluye lenguaje discriminatorio sobre quién puede alquilar"
+      ]
+    }
+  ]
+}

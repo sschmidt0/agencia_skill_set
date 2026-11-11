@@ -58,5 +58,6 @@ Este archivo se carga cuando se pide traducir o generar un anuncio directamente 
 - **"Ático" no es "attic"**: en inglés, "attic" es un espacio bajo cubierta sin uso residencial habitual. Un ático español (vivienda en última planta, normalmente con terraza) se traduce como "penthouse" o "top-floor apartment" según el nivel de la propiedad.
 - **"Piso" en catalán es "pis"**, pero cuidado: en inglés, "flat" es más británico y "apartment" más neutro/americano — usar "apartment" salvo que el cliente pida explícitamente un registro británico.
 - **Zona de mercado tenso**: es un concepto legal específico español/catalán sin equivalente exacto en mercados anglosajones — al traducir al inglés, conviene añadir una breve aclaración en vez de buscar un término directo.
+- **Formato de cifras**: en español y catalán, punto para miles y símbolo detrás (245.000€); en inglés, coma para miles y símbolo delante (€245,000; 1,200m²). Cambiar solo el formato, nunca la cifra.
 - Los nombres propios de zonas/barrios **nunca se traducen** (p.ej. "Sant Feliu de Llobregat" se mantiene igual en los tres idiomas).
 - Si un término no aparece en esta tabla, no forzar una traducción literal: usar el criterio de tono y precisión definido en `tono-por-tipo-propiedad.md` y, si hay duda razonable, dejar el término en español entre comillas con una breve explicación en el idioma de destino.

@@ -20,7 +20,7 @@ Estructura de referencia para generar descripciones de casas (unifamiliares, ado
    - Específico si hay datos: "urbanización cerrada con acceso controlado", "a 10 min en coche del centro"
 
 3. **Características de la propiedad** (lista o párrafo)
-   - Obligatorias: m² construidos, m² de parcela, habitaciones, baños, número de plantas de la vivienda
+   - Obligatorias: superficie de la vivienda (m² construidos o útiles, siempre indicando cuál — ver normativa-anuncios.md), m² de parcela, habitaciones, baños, número de plantas de la vivienda
    - Opcionales si hay dato: piscina, jardín, garaje/plazas de parking, orientación, año de construcción, estado, tipo de vivienda (independiente/adosada/pareada), medianeras (si aplica), calefacción/aire acondicionado, trastero/bodega
 
 4. **Elemento diferenciador** (1 frase)
@@ -35,8 +35,8 @@ Estructura de referencia para generar descripciones de casas (unifamiliares, ado
 | Campo | Obligatorio | Notas |
 |---|---|---|
 | tipo_vivienda | Sí | independiente, adosada, pareada, chalet... |
-| m2_construidos | Sí | — |
-| m2_parcela | Sí | diferenciar de m² construidos |
+| superficie | Sí | m² construidos o útiles (o ambos); si no se especifica, tratar como construidos y avisar al usuario |
+| m2_parcela | Sí | dato aparte, no sustituye a la superficie de la vivienda |
 | habitaciones | Sí | — |
 | baños | Sí | — |
 | plantas_vivienda | Sí | número de plantas de la casa (no confundir con planta de un piso) |
@@ -47,7 +47,7 @@ Estructura de referencia para generar descripciones de casas (unifamiliares, ado
 | jardín | No | — |
 | garaje | No | plazas si se conoce |
 | medianeras | No | solo si es adosada/pareada |
-| segmento | No | familiar, inversión, lujo → ver reference/tono-por-tipo-propiedad.md |
+| segmento | No | familiar, inversión, lujo, estudiantes → ver reference/tono-por-tipo-propiedad.md |
 
 ## Ejemplo completo
 
@@ -58,11 +58,11 @@ Chalet independiente, 220m² construidos, parcela 500m², 4 hab, 3 baños, 2 pla
 
 > **Chalet independiente de 4 habitaciones con piscina y jardín en Sant Cugat del Vallès**
 >
-> Ubicado en una tranquila zona residencial de Sant Cugat, este chalet ofrece la privacidad de una vivienda independiente sin renunciar a la cercanía con el centro y sus servicios.
+> Ubicado en Sant Cugat del Vallès, este chalet independiente ofrece la privacidad de una vivienda sin paredes compartidas con vecinos y con espacio exterior propio.
 >
 > La casa cuenta con 220m² construidos en 2 plantas, distribuidos en 4 habitaciones y 3 baños, sobre una parcela de 500m². Dispone de piscina propia, jardín con zona de barbacoa y garaje para 2 vehículos.
 >
-> La combinación de parcela amplia, piscina privada y ubicación residencial la convierte en una opción ideal para quienes buscan espacio y tranquilidad sin alejarse de la ciudad.
+> La combinación de parcela de 500m², piscina privada y garaje doble la convierte en una opción pensada para quienes buscan espacio interior y exterior.
 >
 > Precio: 690.000€ · Certificado energético: D
 > Ven a conocerla en persona, agenda tu visita.

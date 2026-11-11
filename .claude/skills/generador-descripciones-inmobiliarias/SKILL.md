@@ -46,6 +46,8 @@ generador-descripciones-inmobiliarias/
 │   ├── plantilla-piso.md
 │   ├── plantilla-casa.md
 │   └── plantilla-local-comercial.md
-└── examples/
-    └── descripciones-ejemplo.md
+├── examples/
+│   └── descripciones-ejemplo.md
+└── evals/
+    └── evals.json   ← casos de prueba del skill; no cargar al generar anuncios
 ```

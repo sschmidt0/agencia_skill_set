@@ -6,7 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Claude Code **skill set** for a real estate agency. It contains prompt-driven skills (no executable code) that Claude Code loads to handle specific tasks. Currently one skill is implemented.
 
+Skills live in `.claude/skills/<skill-name>/` so Claude Code loads them automatically when working in this project. All file paths mentioned below are relative to the skill's folder.
+
 ## Skill: `generador-descripciones-inmobiliarias`
+
+Location: `.claude/skills/generador-descripciones-inmobiliarias/`
+
+Test cases live in `evals/evals.json` (skill-creator format). When changing the skill's rules, templates or examples, keep the evals consistent with them.
 
 Generates commercial property listings (pisos, casas, locales comerciales) from structured input data. Supports Spanish, Catalan, and English.
 
@@ -15,8 +21,8 @@ When a user provides property data and asks to generate, improve, or translate a
 
 ### Mandatory fields before generating (never guess or fill in)
 - Certificado de eficiencia energética (CEE) — letter A–G, and kWh/m²/year if available
-- Total price (or rent/traspaso amount)
-- Surface area — distinguish `m² construidos` vs `m² útiles`; if unspecified, default to `construidos` and say so explicitly
+- Price by operation: venta → total price; alquiler → monthly rent; traspaso → traspaso amount (monthly rent recommended, not mandatory)
+- Surface area — `m² construidos` or `m² útiles` (either is valid), always labelled in the text; if unspecified, treat as `construidos`, write it that way, and tell the user outside the listing. Never derive one from the other
 - Operation type: venta / alquiler / traspaso
 - Location (zone/neighborhood, exact address not required)
 

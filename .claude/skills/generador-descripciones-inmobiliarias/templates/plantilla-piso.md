@@ -13,7 +13,7 @@ Estructura de referencia para generar descripciones de pisos. Sigue este orden y
    - Evitar clichés vacíos ("zona muy bien comunicada" sin más). Ser específico si hay datos: "a 5 min a pie de la estación de FGC"
 
 3. **Características de la propiedad** (lista o párrafo, según estilo de la agencia)
-   - Obligatorias: m² construidos, habitaciones, baños, planta, ascensor (sí/no)
+   - Obligatorias: superficie (m² construidos o útiles, siempre indicando cuál — ver normativa-anuncios.md), habitaciones, baños, planta, ascensor (sí/no)
    - Opcionales si hay dato: orientación, año de construcción, estado (reformado/a reformar/obra nueva), terraza/balcón, trastero, parking, calefacción/aire acondicionado, comunidad (cuota si se conoce)
 
 4. **Elemento diferenciador** (1 frase)
@@ -28,7 +28,7 @@ Estructura de referencia para generar descripciones de pisos. Sigue este orden y
 | Campo | Obligatorio | Notas |
 |---|---|---|
 | tipo_propiedad | Sí | piso, ático, dúplex, estudio... |
-| m2_construidos | Sí | — |
+| superficie | Sí | m² construidos o útiles (o ambos); si no se especifica, tratar como construidos y avisar al usuario |
 | habitaciones | Sí | — |
 | baños | Sí | — |
 | planta | Sí | incluir si hay ascensor |
@@ -46,13 +46,13 @@ Piso, 85m², 3 hab, 2 baños, 4ª planta con ascensor, Sant Feliu de Llobregat (
 
 **Salida esperada:**
 
-> **Piso reformado de 3 habitaciones con terraza cerca de la FGC en Sant Feliu**
+> **Piso reformado de 3 habitaciones con terraza cerca de los FGC en Sant Feliu**
 >
-> Situado a solo 5 minutos a pie de la estación de FGC, este piso combina la tranquilidad de un barrio residencial con la comodidad de tener el centro de Barcelona a un trayecto corto. La zona cuenta con comercios, colegios y zonas verdes a poca distancia.
+> Situado en Sant Feliu de Llobregat, cerca de la estación de FGC, este piso permite moverse en transporte público en el día a día sin depender del coche.
 >
-> La vivienda dispone de 85m² distribuidos en 3 habitaciones y 2 baños, en 4ª planta con ascensor. Reformado en 2022, mantiene un estado impecable con acabados modernos. Cuenta además con una terraza de 8m², ideal para disfrutar del exterior sin salir de casa.
+> La vivienda dispone de 85m² construidos distribuidos en 3 habitaciones y 2 baños, en una 4ª planta con ascensor. Fue reformada en 2022, por lo que está lista para entrar a vivir. Cuenta además con una terraza de 8m², un espacio exterior propio para aprovechar a diario.
 >
-> Su luminosidad y la reforma reciente lo convierten en una opción lista para entrar a vivir sin pendientes de obra.
+> La reforma reciente, la terraza y el ascensor la convierten en una opción cómoda para instalarse sin necesidad de obras.
 >
 > Precio: 245.000€ · Certificado energético: C
 > Concierta tu visita y descubre tu próximo hogar.
