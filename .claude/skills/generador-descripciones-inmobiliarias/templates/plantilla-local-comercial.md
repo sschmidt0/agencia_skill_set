@@ -25,11 +25,13 @@ Estructura de referencia para generar descripciones de locales comerciales (vent
 
 4. **Elemento diferenciador** (1 frase)
    - Esquina, doble fachada, escaparate amplio, licencia de actividad ya concedida para un uso específico (ahorra trámites al inquilino), traspaso con clientela activa
+   - Un solo rasgo y el beneficio concreto que aporta. No repetir la lista de características del párrafo anterior
    - Describir lo que tiene el local, sin compararlo con otros de la zona salvo que el usuario aporte ese dato
    - Si no hay dato diferenciador claro, omitir esta sección — no inventar
 
 5. **Cierre con llamada a la acción**
    - Ejemplo: "Solicita más información sobre condiciones y disponibilidad" / "Contacta para concertar una visita técnica"
+   - No afirmar disponibilidad, plazos ni escasez que el usuario no haya indicado
 
 ## Variables a rellenar
 
@@ -40,7 +42,7 @@ Estructura de referencia para generar descripciones de locales comerciales (vent
 | diáfano_o_compartimentado | Sí | — |
 | uso_permitido | Sí | según licencia de actividad — no asumir que cualquier uso está permitido |
 | planta | Sí | calle, sótano, entresuelo, primera planta... |
-| ubicación | Sí | calle/zona + ciudad |
+| ubicación | Sí | calle/zona + ciudad (la calle puede aparecer; el número no) |
 | precio | Sí | venta: precio total · alquiler: renta mensual · traspaso: importe del traspaso; renta mensual recomendada si se conoce (ver normativa-anuncios.md) |
 | certificado_energético | Sí | letra + consumo (ver normativa-anuncios.md) — obligatorio también en locales |
 | escaparate_ml | No | metros lineales de escaparate |
@@ -57,11 +59,11 @@ Local en alquiler, 90m², diáfano, planta calle, esquina, uso permitido: comerc
 
 > **Local diáfano en esquina con salida de humos en la calle comercial principal de Sant Feliu**
 >
-> Situado en planta calle y en esquina sobre la calle comercial principal de Sant Feliu de Llobregat. Su licencia permite tanto uso comercial como de hostelería.
+> Situado en planta calle y en esquina sobre la calle comercial principal de Sant Feliu de Llobregat.
 >
-> Cuenta con 90m² construidos, diáfanos, y 12 metros lineales de escaparate. Uso permitido: comercial/hostelería. Dispone de salida de humos ya instalada, lo que evita esa obra a negocios de restauración y agiliza su puesta en marcha.
+> Cuenta con 90m² construidos, diáfanos, con 12 metros lineales de escaparate que dan visibilidad al negocio desde la calle. Uso permitido: comercial y hostelería.
 >
-> La combinación de esquina, uso hostelero permitido y salida de humos instalada lo hace especialmente adecuado para restauración.
+> La salida de humos ya instalada evita esa obra a un negocio de restauración y agiliza su apertura.
 >
 > Renta: 1.200€/mes · Certificado energético: E
 > Solicita más información sobre condiciones y disponibilidad.
@@ -69,6 +71,7 @@ Local en alquiler, 90m², diáfano, planta calle, esquina, uso permitido: comerc
 ## Notas de estilo
 - Longitud objetivo: 80-150 palabras, igual que en las otras plantillas
 - Evitar lenguaje aspiracional/emocional ("tu negocio soñado") — priorizar datos objetivos que ayuden a evaluar viabilidad
+- Ningún rasgo aparece más de dos veces en el texto, titular incluido
 - El uso permitido/licencia de actividad nunca se omite ni se asume — si no se proporciona, preguntar antes de generar el anuncio
 - Certificado energético y precio (o renta/traspaso) siempre explícitos (ver reference/normativa-anuncios.md)
 - Si hay traspaso con clientela o facturación conocida, tratarlo como elemento diferenciador propio — es uno de los datos que más interesa a un comprador de negocio

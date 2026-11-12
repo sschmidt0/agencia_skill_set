@@ -2,7 +2,7 @@
 
 Ejemplos completos de entrada→salida para los tres tipos de propiedad, distintos segmentos de tono y los tres idiomas (español, catalán, inglés), más casos con datos incompletos. Sirven como referencia rápida de calibración — si el texto generado se aleja mucho de este registro, revisar `tono-por-tipo-propiedad.md` antes de tocar la lógica del `SKILL.md`.
 
-Regla común a todos los ejemplos: cada afirmación de la salida se apoya en un dato de la entrada. Cuando la entrada no aporta datos del entorno (servicios, ambiente, afluencia), el párrafo de ubicación se mantiene breve en lugar de rellenarse con suposiciones.
+Regla común a todos los ejemplos: cada afirmación de la salida se apoya en un dato de la entrada. Ningún rasgo se repite más de dos veces (titular incluido): el diferenciador desarrolla un solo rasgo en lugar de volver a enumerar las características. Cuando la entrada no aporta datos del entorno (servicios, ambiente, afluencia), el párrafo de ubicación se mantiene breve en lugar de rellenarse con suposiciones.
 
 ---
 
@@ -16,12 +16,12 @@ Regla común a todos los ejemplos: cada afirmación de la salida se apoya en un 
 >
 > Situado en Sant Feliu de Llobregat, cerca de la estación de FGC, este piso permite moverse en transporte público en el día a día sin depender del coche.
 >
-> La vivienda dispone de 85m² construidos distribuidos en 3 habitaciones y 2 baños, en una 4ª planta con ascensor. Fue reformada en 2022, por lo que está lista para entrar a vivir. Cuenta además con una terraza de 8m², un espacio exterior propio para aprovechar a diario.
+> La vivienda dispone de 85m² construidos distribuidos en 3 habitaciones y 2 baños, en una 4ª planta con ascensor. Fue reformada en 2022, por lo que está lista para entrar a vivir sin hacer obras.
 >
-> La reforma reciente, la terraza y el ascensor la convierten en una opción cómoda para instalarse sin necesidad de obras.
+> Su terraza de 8m² añade un espacio exterior propio para aprovechar a diario.
 >
 > Precio: 245.000€ · Certificado energético: C
-> Concierta tu visita y descubre tu próximo hogar.
+> Llámanos o escríbenos para concertar una visita al piso.
 
 *Nota: no se mencionan distancias concretas, luminosidad, calidad de acabados ni servicios del barrio porque no constan en la entrada. La superficie se indica como "construidos" por defecto al no especificarse.*
 
@@ -37,9 +37,9 @@ Regla común a todos los ejemplos: cada afirmación de la salida se apoya en un 
 >
 > Ubicado en Sant Feliu de Llobregat, cerca de la estación de FGC.
 >
-> 85m² construidos, 3 habitaciones y 2 baños, 4ª planta con ascensor y terraza de 8m². Reformado en 2022. La vivienda se encuentra actualmente arrendada con contrato en vigor, por lo que se adquiere con inquilino y un contrato de alquiler ya en curso.
+> 85m² construidos, 3 habitaciones y 2 baños, 4ª planta con ascensor y terraza de 8m². Reformado en 2022.
 >
-> Al estar reformado recientemente y alquilado, es una opción para el inversor que busca un inmueble ya en explotación.
+> Se adquiere con inquilino y contrato en vigor, por lo que el inversor incorpora un inmueble que ya está en explotación desde el primer día.
 >
 > Precio: 245.000€ · Certificado energético: C
 > Solicita más información sobre las condiciones del contrato actual.
@@ -56,11 +56,11 @@ Regla común a todos los ejemplos: cada afirmación de la salida se apoya en un 
 
 > **Villa independiente con piscina infinity y vistas al mar en Sitges**
 >
-> En Sitges, esta villa independiente se asienta sobre una parcela de 1.200m² con vistas al mar Mediterráneo.
+> En Sitges, esta villa independiente se asienta sobre una parcela de 1.200m².
 >
-> Con 350m² construidos repartidos en 2 plantas, la vivienda ofrece 5 habitaciones y 4 baños. Los acabados definen el nivel de la propiedad: cocina Bulthaup y suelos de mármol. En el exterior, la piscina infinity completa una parcela de amplias dimensiones.
+> Con 350m² construidos repartidos en 2 plantas, la vivienda ofrece 5 habitaciones y 4 baños. Los acabados definen el nivel de la propiedad: cocina Bulthaup y suelos de mármol.
 >
-> Una propiedad que reúne vistas al mar, piscina infinity y acabados de firma reconocida sobre más de mil metros de parcela.
+> En el exterior, la piscina infinity y las vistas al mar Mediterráneo dan a la parcela su carácter.
 >
 > Precio: 1.850.000€ · Certificado energético: B
 > Concierte una visita privada para conocer la propiedad.
@@ -77,11 +77,11 @@ Regla común a todos los ejemplos: cada afirmación de la salida se apoya en un 
 
 > **Local diáfano en esquina con salida de humos en la calle comercial principal de Sant Feliu**
 >
-> Situado en planta calle y en esquina sobre la calle comercial principal de Sant Feliu de Llobregat. Su licencia permite tanto uso comercial como de hostelería.
+> Situado en planta calle y en esquina sobre la calle comercial principal de Sant Feliu de Llobregat.
 >
-> Cuenta con 90m² construidos, diáfanos, y 12 metros lineales de escaparate. Uso permitido: comercial/hostelería. Dispone de salida de humos ya instalada, lo que evita esa obra a negocios de restauración y agiliza su puesta en marcha.
+> Cuenta con 90m² construidos, diáfanos, con 12 metros lineales de escaparate que dan visibilidad al negocio desde la calle. Uso permitido: comercial y hostelería.
 >
-> La combinación de esquina, uso hostelero permitido y salida de humos instalada lo hace especialmente adecuado para restauración.
+> La salida de humos ya instalada evita esa obra a un negocio de restauración y agiliza su apertura.
 >
 > Renta: 1.200€/mes · Certificado energético: E
 > Solicita más información sobre condiciones y disponibilidad.
@@ -100,12 +100,12 @@ Regla común a todos los ejemplos: cada afirmación de la salida se apoya en un 
 >
 > Situat a Sant Feliu de Llobregat, a prop de l'estació dels FGC, aquest pis permet moure's en transport públic en el dia a dia sense dependre del cotxe.
 >
-> L'habitatge disposa de 85m² construïts distribuïts en 3 habitacions i 2 banys, en una 4a planta amb ascensor. Es va reformar el 2022, de manera que està llest per entrar-hi a viure. Compta a més amb una terrassa de 8m², un espai exterior propi per aprofitar cada dia.
+> L'habitatge disposa de 85m² construïts distribuïts en 3 habitacions i 2 banys, en una 4a planta amb ascensor. Es va reformar el 2022, de manera que està llest per entrar-hi a viure sense fer obres.
 >
-> La reforma recent, la terrassa i l'ascensor el converteixen en una opció còmoda per instal·lar-s'hi sense necessitat d'obres.
+> La seva terrassa de 8m² afegeix un espai exterior propi per aprofitar cada dia.
 >
 > Preu: 245.000€ · Certificat energètic: C
-> Concerta la teva visita i descobreix la teva propera llar.
+> Truca'ns o escriu-nos per concertar una visita al pis.
 
 *Nota: se usan los términos de `vocabulario-inmobiliario-es-ca-en.md` ("pis", "metres construïts", "certificat energètic"). No es una traducción palabra por palabra: la redacción se adapta al catalán manteniendo exactamente los mismos datos.*
 
@@ -119,11 +119,11 @@ Regla común a todos los ejemplos: cada afirmación de la salida se apoya en un 
 
 > **Detached villa with infinity pool and sea views in Sitges**
 >
-> In Sitges, this detached villa stands on a 1,200m² plot with views of the Mediterranean Sea.
+> In Sitges, this detached villa stands on a 1,200m² plot.
 >
-> With 350m² of built area over 2 floors, the house offers 5 bedrooms and 4 bathrooms. The finishes set the standard of the property: a Bulthaup kitchen and marble floors. Outside, the infinity pool completes a generously sized plot.
+> With 350m² of built area over 2 floors, the house offers 5 bedrooms and 4 bathrooms. The finishes set the standard of the property: a Bulthaup kitchen and marble floors.
 >
-> A property that brings together sea views, an infinity pool and finishes from renowned brands on more than a thousand square metres of land.
+> Outside, the infinity pool and views of the Mediterranean Sea give the plot its character.
 >
 > Price: €1,850,000 · Energy performance certificate (EPC): B
 > Arrange a private viewing to discover the property.
