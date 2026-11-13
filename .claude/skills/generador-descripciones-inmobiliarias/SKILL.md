@@ -32,6 +32,9 @@ Actívalo cuando el usuario proporcione datos de una propiedad (aunque sea en br
 - En locales comerciales, el uso permitido/licencia de actividad es tan obligatorio como el certificado energético — no asumir que cualquier uso está permitido
 - El tipo de operación (venta/alquiler/traspaso) nunca se deduce del importe: si el usuario no lo indica, preguntarlo antes de redactar, aunque el precio haga una opción probable
 - No comparar la propiedad con otras de la zona ("a diferencia de otros pisos de la zona", "más amplio que la media") salvo que el usuario aporte ese dato comparativo — el elemento diferenciador describe lo que tiene la propiedad, no lo que les falta a otras
+- Ubicación: en viviendas (pisos y casas), el anuncio indica barrio/zona y localidad, nunca la calle ni el número, aunque aparezcan en los datos — salvo que el usuario pida expresamente incluirlos. En locales comerciales se puede nombrar la calle (su visibilidad es parte del producto), pero nunca el número. Si se ha omitido la calle, avisar al usuario fuera del anuncio
+- Sin repeticiones: cada rasgo (reforma, terraza, suelos, piscina, salida de humos…) aparece como máximo dos veces en todo el texto, titular incluido. El elemento diferenciador no vuelve a enumerar las características: desarrolla un solo rasgo con el beneficio concreto que aporta, o se omite
+- El cierre es una llamada a la acción concreta y sobria ("Llámanos para concertar una visita al piso"), no una fórmula genérica ("descubre tu próximo hogar"). Nunca afirma disponibilidad, plazos ni escasez ("disponible esta semana", "pocas oportunidades así") sin que el usuario lo haya indicado
 - Mantener el texto entre 80-150 palabras salvo que el usuario pida otra longitud
 - El segmento/tono ajusta el registro y el énfasis, nunca elimina un campo obligatorio ni cambia la estructura base de la plantilla
 

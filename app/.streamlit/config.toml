@@ -1,0 +1,14 @@
+[theme]
+base = "light"
+primaryColor = "#2f5d50"
+backgroundColor = "#f7f5f0"
+secondaryBackgroundColor = "#efebe3"
+textColor = "#1f2a28"
+borderColor = "#e4dfd5"
+baseRadius = "10px"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+headingFont = "'DM Serif Display':https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+headingFontWeights = [400, 400, 400, 400, 400, 400]
+
+[browser]
+gatherUsageStats = false

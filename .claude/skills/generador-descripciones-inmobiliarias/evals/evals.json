@@ -15,7 +15,10 @@
         "Indica que es una 2ª planta sin ascensor (no lo oculta ni lo maquilla)",
         "No inventa datos ausentes: distancias, transporte concreto, luminosidad, estado de reforma o servicios del barrio",
         "El texto del anuncio tiene entre 80 y 150 palabras",
-        "No usa mayúsculas para enfatizar ni varias exclamaciones"
+        "No usa mayúsculas para enfatizar ni varias exclamaciones",
+        "Ningún rasgo (balcón, planta, etc.) aparece más de dos veces en el texto, titular incluido",
+        "Si hay elemento diferenciador, desarrolla un solo rasgo y no vuelve a enumerar las características",
+        "El cierre es una llamada a la acción concreta, no una fórmula genérica como 'descubre tu próximo hogar', y no afirma disponibilidad ni plazos"
       ]
     },
     {
@@ -152,6 +155,24 @@
         "No genera ningún borrador de anuncio",
         "Pregunta explícitamente el tipo de operación (venta, alquiler o traspaso)",
         "No da por hecho que es una venta por el importe, ni redacta el anuncio como venta 'a confirmar'"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "vivienda-sin-calle",
+      "prompt": "visita 11/11 - piso c/ Verdi 42, Gràcia (Barcelona). 3 hab (1 peq), 1 baño + aseo, 82m2 const. 3º sin ascensor. venta 365.000€. CEE E 148 kWh/m² año. reformado 2019, cocina abierta, balcón a calle, suelos hidráulicos. comunidad 60€/mes. mucha luz por la tarde",
+      "expected_output": "Anuncio que sitúa el piso en Gràcia (Barcelona) sin nombrar la calle ni el número, sin repetir rasgos y con un cierre concreto; avisa fuera del anuncio de que ha omitido la calle.",
+      "files": [],
+      "expectations": [
+        "Genera el anuncio sin preguntar nada, porque están todos los datos obligatorios",
+        "El texto del anuncio no menciona la calle Verdi ni el número 42",
+        "Indica el barrio de Gràcia y la ciudad de Barcelona",
+        "Fuera del texto del anuncio, avisa de que ha omitido la calle y ofrece incluirla",
+        "Ni 'reformado/reforma' ni 'suelos hidráulicos' aparecen más de dos veces en el texto, titular incluido",
+        "El elemento diferenciador desarrolla un solo rasgo y no repite la lista de características",
+        "El cierre no es una fórmula genérica como 'descubre tu próximo hogar'",
+        "El texto incluye 365.000€ y el certificado energético E (148 kWh/m² año)",
+        "Indica que es una 3ª planta sin ascensor"
       ]
     }
   ]

@@ -10,6 +10,7 @@ Estructura de referencia para generar descripciones de pisos. Sigue este orden y
 
 2. **Párrafo de ubicación y entorno** (2-3 frases)
    - Contextualiza el barrio/zona: transporte, servicios cercanos, ambiente
+   - Barrio/zona y localidad, nunca la calle ni el número aunque consten en los datos (salvo petición expresa del usuario)
    - Evitar clichés vacíos ("zona muy bien comunicada" sin más). Ser específico si hay datos: "a 5 min a pie de la estación de FGC"
 
 3. **Características de la propiedad** (lista o párrafo, según estilo de la agencia)
@@ -18,11 +19,13 @@ Estructura de referencia para generar descripciones de pisos. Sigue este orden y
 
 4. **Elemento diferenciador** (1 frase)
    - El rasgo más destacable de la propiedad según los datos: vistas, luz natural, reforma reciente, edificio con encanto, etc.
+   - Un solo rasgo y el beneficio concreto que aporta. No repetir la lista de características del párrafo anterior; si ese rasgo ya está desarrollado allí, moverlo aquí en lugar de duplicarlo
    - Describir lo que tiene la propiedad, sin compararla con otras de la zona salvo que el usuario aporte ese dato
    - Si no hay dato diferenciador claro, omitir esta sección — no inventar
 
 5. **Cierre con llamada a la acción**
-   - Ejemplo: "Concierta tu visita y descubre tu próximo hogar" / "Disponible para visitas esta semana"
+   - Acción concreta y sobria: "Llámanos o escríbenos para concertar una visita al piso" / "Pide más información o reserva una visita"
+   - Evitar fórmulas genéricas ("descubre tu próximo hogar") y no afirmar disponibilidad, plazos ni escasez que el usuario no haya indicado
 
 ## Variables a rellenar
 
@@ -51,15 +54,16 @@ Piso, 85m², 3 hab, 2 baños, 4ª planta con ascensor, Sant Feliu de Llobregat (
 >
 > Situado en Sant Feliu de Llobregat, cerca de la estación de FGC, este piso permite moverse en transporte público en el día a día sin depender del coche.
 >
-> La vivienda dispone de 85m² construidos distribuidos en 3 habitaciones y 2 baños, en una 4ª planta con ascensor. Fue reformada en 2022, por lo que está lista para entrar a vivir. Cuenta además con una terraza de 8m², un espacio exterior propio para aprovechar a diario.
+> La vivienda dispone de 85m² construidos distribuidos en 3 habitaciones y 2 baños, en una 4ª planta con ascensor. Fue reformada en 2022, por lo que está lista para entrar a vivir sin hacer obras.
 >
-> La reforma reciente, la terraza y el ascensor la convierten en una opción cómoda para instalarse sin necesidad de obras.
+> Su terraza de 8m² añade un espacio exterior propio para aprovechar a diario.
 >
 > Precio: 245.000€ · Certificado energético: C
-> Concierta tu visita y descubre tu próximo hogar.
+> Llámanos o escríbenos para concertar una visita al piso.
 
 ## Notas de estilo
 - Longitud objetivo: 80-150 palabras (salvo indicación contraria)
 - Evitar superlativos sin respaldo ("el mejor piso de la zona") — preferir datos concretos
+- Ningún rasgo aparece más de dos veces en el texto, titular incluido
 - No usar mayúsculas para enfatizar, ni exceso de exclamaciones
 - El certificado energético y el precio siempre van explícitos, nunca se omiten

@@ -1,1 +1,5 @@
 .DS_Store
+app/.venv/
+app/.streamlit/secrets.toml
+__pycache__/
+app/.env

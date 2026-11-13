@@ -8,6 +8,10 @@ This is a Claude Code **skill set** for a real estate agency. It contains prompt
 
 Skills live in `.claude/skills/<skill-name>/` so Claude Code loads them automatically when working in this project. All file paths mentioned below are relative to the skill's folder.
 
+## App (`app/`)
+
+A Streamlit UI (`app/app.py`) lets agencies use the skill without Claude Code. `app/skill_engine.py` loads every `.md` file of the skill into the system prompt at runtime and calls the Claude API with a JSON schema (`status` / `listing` / `questions` / `notes` / `datos`). `datos` is the mandatory-field checklist the "Desde notas" tab shows after extracting fields from free-text notes. The skill files are the single source of truth — don't duplicate their rules in the app beyond the `CAMPOS_DATOS` mandatory-field checklist in `skill_engine.py`, and keep it in sync with `reference/normativa-anuncios.md`. Run it with `cd app && .venv/bin/streamlit run app.py` (see `app/README.md`).
+
 ## Skill: `generador-descripciones-inmobiliarias`
 
 Location: `.claude/skills/generador-descripciones-inmobiliarias/`

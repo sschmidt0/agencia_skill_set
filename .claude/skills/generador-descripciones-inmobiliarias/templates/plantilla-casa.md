@@ -25,11 +25,13 @@ Estructura de referencia para generar descripciones de casas (unifamiliares, ado
 
 4. **Elemento diferenciador** (1 frase)
    - Vistas, tipo de parcela, piscina propia, reforma reciente, ubicación singular
+   - Un solo rasgo y el beneficio concreto que aporta. No repetir la lista de características del párrafo anterior
    - Describir lo que tiene la propiedad, sin compararla con otras de la zona salvo que el usuario aporte ese dato
    - Si no hay dato diferenciador claro, omitir esta sección — no inventar
 
 5. **Cierre con llamada a la acción**
-   - Ejemplo: "Ven a conocerla en persona, agenda tu visita" / "Pocas oportunidades así en la zona — contacta para más información"
+   - Acción concreta y sobria: "Agenda una visita para conocer la casa en persona" / "Contacta para más información o para visitarla"
+   - Evitar fórmulas genéricas y no afirmar disponibilidad, plazos ni escasez ("pocas oportunidades así") que el usuario no haya indicado
 
 ## Variables a rellenar
 
@@ -41,7 +43,7 @@ Estructura de referencia para generar descripciones de casas (unifamiliares, ado
 | habitaciones | Sí | — |
 | baños | Sí | — |
 | plantas_vivienda | Sí | número de plantas de la casa (no confundir con planta de un piso) |
-| ubicación | Sí | zona/urbanización + ciudad |
+| ubicación | Sí | zona/urbanización + ciudad (nunca calle ni número salvo petición expresa) |
 | precio | Sí | — |
 | certificado_energético | Sí | letra + consumo (ver normativa-anuncios.md) |
 | piscina | No | propia o comunitaria |
@@ -61,15 +63,16 @@ Chalet independiente, 220m² construidos, parcela 500m², 4 hab, 3 baños, 2 pla
 >
 > Ubicado en Sant Cugat del Vallès, este chalet independiente ofrece la privacidad de una vivienda sin paredes compartidas con vecinos y con espacio exterior propio.
 >
-> La casa cuenta con 220m² construidos en 2 plantas, distribuidos en 4 habitaciones y 3 baños, sobre una parcela de 500m². Dispone de piscina propia, jardín con zona de barbacoa y garaje para 2 vehículos.
+> La casa cuenta con 220m² construidos en 2 plantas, distribuidos en 4 habitaciones y 3 baños. Dispone de piscina propia, jardín con zona de barbacoa y garaje para 2 vehículos.
 >
-> La combinación de parcela de 500m², piscina privada y garaje doble la convierte en una opción pensada para quienes buscan espacio interior y exterior.
+> Sus 500m² de parcela permiten aprovechar el exterior buena parte del año sin salir de casa.
 >
 > Precio: 690.000€ · Certificado energético: D
-> Ven a conocerla en persona, agenda tu visita.
+> Agenda una visita para conocer el chalet en persona.
 
 ## Notas de estilo
 - Longitud objetivo: 80-150 palabras (salvo indicación contraria), igual que en piso
 - Priorizar en el texto los elementos exteriores (parcela, piscina, jardín) frente a detalles interiores menores — es lo que más pesa en la decisión de compra en este tipo de propiedad
 - Certificado energético y precio siempre explícitos, nunca se omiten (ver reference/normativa-anuncios.md)
+- Ningún rasgo aparece más de dos veces en el texto, titular incluido
 - Si la parcela es especialmente grande o singular (huerto, arbolado maduro, vistas despejadas), tratarlo como elemento diferenciador propio, no como una característica más de la lista

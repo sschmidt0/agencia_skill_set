@@ -29,6 +29,7 @@ Este archivo se carga cuando el skill necesita verificar qué información es le
 
 5. **Ubicación**
    - No es obligatorio dar la dirección exacta (de hecho, muchas agencias prefieren solo zona/barrio por seguridad y para evitar que el cliente contacte directamente al propietario), pero sí la localidad y zona aproximada.
+   - Criterio de este skill: en viviendas, nunca la calle ni el número en el texto del anuncio, aunque el usuario los dé, salvo que pida expresamente incluirlos. En locales, la calle sí puede aparecer (es un factor comercial), el número no.
 
 ## Campos obligatorios adicionales en locales comerciales
 
